@@ -14,7 +14,6 @@ export default class Home extends React.Component {
       <Head>
         <title>guys.wtf</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-        <meta http-equiv="last-modified" content={buildTime.toUTCString()} />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
       </Head>
       <h1>guys.wtf &gt; x.com</h1>
