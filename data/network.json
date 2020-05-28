@@ -7,7 +7,7 @@
     ["getrecd.guys.wtf", "Hackathon Project", true],
     ["jesus.guys.wtf", "Jesus", true],
     ["live.guys.wtf", "Live Demo", true],
-    ["local.guys.wtf", "DNS pointing to <code>127.0.0.1</code> and <code>::1</code>", true],
+    ["local.guys.wtf", "DNS pointing to <code>127.0.0.1</code> and <code>::1</code>. Also works for any subdomain. ", true],
     ["pancakes.guys.wtf", "Because pancakes. ", true],
     ["u.guys.wtf", "Unicode", true],
     ["vibrate.guys.wtf", "Morse Code", true],
