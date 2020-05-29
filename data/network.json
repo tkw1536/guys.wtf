@@ -20,5 +20,7 @@
     ["dial.everyone.wtf", "#DialYourTweet", true],
     ["stalk.everyone.wtf", "Jacobs University People Search", false],
     ["test.everyone.wtf", "#tooManyTests", true],
-    ["time.everyone.wtf", "Time", true]
+    ["time.everyone.wtf", "Time", true],
+
+    ["k.hw.is", "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>", true]
 ]
