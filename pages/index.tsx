@@ -18,7 +18,7 @@ export default class Home extends React.Component {
       </Head>
       <h1>guys.wtf &gt; x.com</h1>
       <p>
-        This page contains a list of pages on guys.wtf that I (or some of my friends) have made. 
+        This page contains a list of pages on <code>guys.wtf</code> and related domains that I (or some of my friends) have made. 
         Most of these are pointless, but still work. 
         If you have an idea for a new one or a suggestion for improvement, email me at <a href="mailto:jesus@guys.wtf">jesus@guys.wtf</a>.
       </p>
