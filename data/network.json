@@ -17,6 +17,7 @@
 
     ["everyone.wtf", "WAT", true],
     ["black.everyone.wtf", "Black Screen", true],
+    ["box.everyone.wtf", "Dots and Boxes from 2013", true],
     ["dial.everyone.wtf", "#DialYourTweet", true],
     ["stalk.everyone.wtf", "Jacobs University People Search", false],
     ["test.everyone.wtf", "#tooManyTests", true],
