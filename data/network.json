@@ -11,6 +11,7 @@
     ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but <code>IPv4</code> (<code>A</code> record) only. ", true],
     ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. ", true],
     ["pancakes.guys.wtf", "Because pancakes. ", true],
+    ["shit.guys.wtf", "Shit happens", true],
     ["u.guys.wtf", "Unicode", true],
     ["vibrate.guys.wtf", "Morse Code", true],
     ["video.guys.wtf", "Screen Capture", true],
