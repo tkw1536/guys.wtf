@@ -10,7 +10,7 @@
     ["local.guys.wtf", "DNS with an <code>A</code> record pointing to <code>127.0.0.1</code> and a <code>AAAA</code> record pointing to <code>::1</code>. Any subomdain is <code>CNAME</code>ed and works as well. ", true],
     ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but <code>IPv4</code> (<code>A</code> record) only. ", true],
     ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. ", true],
-    ["pancakes.guys.wtf", "Because pancakes. ", true],
+    ["pancakes.guys.wtf", "reviewed as \"So thickk\"", true],
     ["shit.guys.wtf", "Shit happens", true],
     ["u.guys.wtf", "Unicode", true],
     ["vibrate.guys.wtf", "Morse Code", true],
