@@ -28,6 +28,7 @@ export default class Home extends React.Component {
       <p>
         This page is powered by <a href="https://nextjs.org/">NEXT.js</a> and <a href="https://github.com/davidrzs/latexcss">latex.css</a>. 
         This page was last updated at <code>{buildTime.toUTCString()}</code>. 
+        For legal reasons I must also link <a href="https://inform.everyone.wtf/" target="_blank">my Privacy Policy and Imprint</a>. 
       </p>
     </>;
   }
