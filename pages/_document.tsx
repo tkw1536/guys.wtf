@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
         <script async src="https://track.everyone.wtf/tracker.js" data-ackee-server="https://track.everyone.wtf" data-ackee-domain-id="95fff7db-30c8-4480-ae71-58a1b20cd971"></script>
+        <script async src="https://inform.everyone.wtf/legal.min.js?small"></script>
         </Head>
         <body>
           <Main />
