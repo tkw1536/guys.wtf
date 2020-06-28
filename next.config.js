@@ -1,12 +1,7 @@
-module.exports = {
-    publicRuntimeConfig: {
-        buildTime: (new Date()).getTime(),
-    },
-};
 
 const withPrefresh = require('@prefresh/next');
 
-module.exports = withPrefresh(Object.assign({
+module.exports = withPrefresh({
     webpack(config, { dev, isServer }) {
         // Move Preact into the framework chunk instead of duplicating in routes:
         const splitChunks = config.optimization && config.optimization.splitChunks
@@ -36,4 +31,4 @@ module.exports = withPrefresh(Object.assign({
 
         return config
     },
-}, module.exports));
+});

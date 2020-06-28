@@ -1,0 +1,47 @@
+.tabList {
+    margin-bottom: 5px;
+}
+.tabList > a {
+    position: relative;
+    top: 5px;
+    font-family: courier;
+    text-decoration: none;
+
+    padding: 5px;
+    margin-left: 20px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border: 1px solid #eeeeee;
+    border-bottom: 0;
+
+}
+
+.tabList > a, .tabList > a:visited {
+    color: black;
+}
+
+.tabList >  a.active {
+    background: #eeeeee;
+    font-weight: bold;
+}
+
+.pageContainer {
+    border: 1px solid #eeeeee;
+    background: #eeeeee;
+    border-radius: 10px;
+    margin-top: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.pageContainer > li {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pageContainer > li.defunct {
+    text-decoration: line-through;
+    opacity: 50%;
+}
