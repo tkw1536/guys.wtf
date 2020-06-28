@@ -1,20 +1,20 @@
 [
-    ["guys.wtf", "", false],
+    ["guys.wtf", ""],
 
-    ["brexit.guys.wtf", "Countdown", false],
-    ["coffee.guys.wtf", "☕", false],
-    ["getrecd.guys.wtf", "Hackathon Project", false],
-    ["jesus.guys.wtf", "Jesus", false],
-    ["pancakes.guys.wtf", "reviewed as \"So thickk\"", false],
-    ["shit.guys.wtf", "Shit happens", false],
-    ["u.guys.wtf", "Unicode", false],
-    ["vibrate.guys.wtf", "Morse Code", false],
-    ["video.guys.wtf", "Screen Capture", false],
+    ["brexit.guys.wtf", "Countdown"],
+    ["coffee.guys.wtf", "☕"],
+    ["getrecd.guys.wtf", "Hackathon Project"],
+    ["jesus.guys.wtf", "Jesus"],
+    ["pancakes.guys.wtf", "reviewed as \"So thickk\""],
+    ["shit.guys.wtf", "Shit happens"],
+    ["u.guys.wtf", "Unicode"],
+    ["vibrate.guys.wtf", "Morse Code"],
+    ["video.guys.wtf", "Screen Capture"],
 
-    ["everyone.wtf", "WAT", false],
-    ["black.everyone.wtf", "Black Screen", false],
-    ["box.everyone.wtf", "Dots and Boxes from 2013", false],
-    ["dial.everyone.wtf", "#DialYourTweet", false],
-    ["test.everyone.wtf", "#tooManyTests", false],
-    ["time.everyone.wtf", "Time", false]
+    ["everyone.wtf", "WAT"],
+    ["black.everyone.wtf", "Black Screen"],
+    ["box.everyone.wtf", "Dots and Boxes from 2013"],
+    ["dial.everyone.wtf", "#DialYourTweet"],
+    ["test.everyone.wtf", "#tooManyTests"],
+    ["time.everyone.wtf", "Time"]
 ]

@@ -5,7 +5,6 @@ export interface PageTab {
 export interface LinkedPage {
     domain: string;
     title: string;
-    defunct: boolean;
 }
 
 /** loads a list of all available pages */
@@ -17,5 +16,5 @@ export default async function fetchTabs(): Promise<PageTab[]> {
 /** Loads a single page form the list of known pages */
 export async function fetchPages(name: string): Promise<LinkedPage[]> {
     const data = (await import(`./tabs/${name}.json`)).default as Array<[string, string, boolean]>;
-    return data.map(([domain, title, defunct]) => ({domain, title, defunct }));
+    return data.map(([domain, title]) => ({domain, title }));
 }

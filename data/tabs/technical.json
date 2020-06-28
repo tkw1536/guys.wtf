@@ -1,7 +1,7 @@
 [
-    ["k.hw.is", "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>", false],
-    ["local.guys.wtf", "DNS with an <code>A</code> record pointing to <code>127.0.0.1</code> and a <code>AAAA</code> record pointing to <code>::1</code>. Any subomdain is <code>CNAME</code>ed and works as well. ", false],
-    ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but <code>IPv4</code> (<code>A</code> record) only. ", false],
-    ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. ", false],
-    ["live.guys.wtf", "Live Demo", false]
+    ["k.hw.is", "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>"],
+    ["local.guys.wtf", "DNS with an <code>A</code> record pointing to <code>127.0.0.1</code> and a <code>AAAA</code> record pointing to <code>::1</code>. Any subomdain is <code>CNAME</code>ed and works as well. "],
+    ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but <code>IPv4</code> (<code>A</code> record) only. "],
+    ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. "],
+    ["live.guys.wtf", "Live Demo"]
 ]

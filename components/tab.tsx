@@ -26,7 +26,7 @@ export default class extends React.Component<{tab: string, tabs: PageTab[], page
                 {tabs.map((t, idx) => <TabLink key={t.name} tab={t} active={t.name === tab} last={idx === lastTabIndex} />)}
             </p>
             <ul className={style.pageContainer}>
-                {pages.map(({ domain, title, defunct }) => <WTFLink key={domain} url={domain} defunct={defunct}>{title}</WTFLink>)}
+                {pages.map(({ domain, title }) => <WTFLink key={domain} url={domain}>{title}</WTFLink>)}
             </ul>
             <p>
                 This page is powered by <a href="https://nextjs.org/">NEXT.js</a> and <a href="https://github.com/davidrzs/latexcss">latex.css</a>.
@@ -47,10 +47,10 @@ class TabLink extends React.Component<{ tab: PageTab, active: boolean, last: boo
     }
 }
 
-class WTFLink extends React.Component<{ url: string, children: string, defunct: boolean }> {
+class WTFLink extends React.Component<{ url: string, children: string }> {
     render() {
-        const { url, defunct, children } = this.props;
-        return <li className={defunct && style.defunct}>
+        const { url, children } = this.props;
+        return <li>
             <a href={`https://${url}`} children={url} /><span dangerouslySetInnerHTML={children ? { __html: ` - ${children}` } : undefined} />
         </li>;
     }
