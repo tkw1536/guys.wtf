@@ -1,16 +1,18 @@
 import * as React from 'react';
-import Router from 'next/router';
 import { GetStaticProps } from "next";
 import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../data";
 import Tab from "./tabs/[tab]";
+import Head from "next/head";
 
 export default class extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
     render() {
-        return <Tab {...this.props} />;
-    }
-    componentDidMount() {
         const { tab } = this.props;
-        Router.replace(`/tabs/${tab}`, );
+        return <>
+            <Head>
+                <meta http-equiv="refresh" content={`0; url=/tabs/${tab}`} />
+            </Head>
+            <Tab {...this.props} />
+        </>;
     }
 }
 export const getStaticProps: GetStaticProps = async () => {
