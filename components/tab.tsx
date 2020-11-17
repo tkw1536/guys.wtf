@@ -41,7 +41,7 @@ class TabLink extends React.Component<{ tab: PageTab, active: boolean, last: boo
         const { active, tab: { title, name }, last } = this.props;
         return <>
             <Link href={`/tabs/${name}`}>
-                <a className={ active  && style.active}>{title}</a>
+                <a className={ active ? style.active : ''}>{title}</a>
             </Link>
         </>;
     }
