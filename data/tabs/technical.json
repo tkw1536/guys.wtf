@@ -5,5 +5,6 @@
     ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv4 (<code>A</code> record) only. "],
     ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. "],
     ["lzw.everyone.wtf", "Compress Strings via LZW"],
+    ["secure.everyone.wtf", "Generate Passwords"],
     ["live.guys.wtf", "Live Demo"]
 ]
