@@ -9,7 +9,7 @@ export default class extends React.Component<{tab: string, tabs: PageTab[], page
         const { tab } = this.props;
         return <>
             <Head>
-                <meta http-equiv="refresh" content={`0; url=/tabs/${tab}`} />
+                <meta httpEquiv="refresh" content={`0; url=/tabs/${tab}`} />
             </Head>
             <Tab {...this.props} />
         </>;
