@@ -13,8 +13,8 @@ export default class extends React.Component<{tab: string, tabs: PageTab[], page
         return <>
             <Head>
                 <title>guys.wtf</title>
-                <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-                <link rel="icon" type="image/x-icon" href="favicon.ico" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="icon" type="image/x-icon" href="/favicon.ico" />
             </Head>
             <h1>guys.wtf &gt; x.com</h1>
             <p>
