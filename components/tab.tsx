@@ -6,7 +6,7 @@ import Link from 'next/link';
 import style from './tab.module.css';
 
 
-export default class extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
+export default class Tab extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
     render() {
         const { tab, tabs, pages } = this.props;
         const lastTabIndex = tabs.length - 1;
@@ -51,7 +51,7 @@ class WTFLink extends React.Component<{ url: string, children: string }> {
     render() {
         const { url, children } = this.props;
         return <li>
-            <a href={`https://${url}`} children={url} /><span dangerouslySetInnerHTML={children ? { __html: ` - ${children}` } : undefined} />
+            <a href={`https://${url}`}>{url}</a><span dangerouslySetInnerHTML={children ? { __html: ` - ${children}` } : undefined} />
         </li>;
     }
 }
