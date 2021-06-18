@@ -5,7 +5,7 @@ import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../../data";
 import Tab from '../../components/tab';
 
 
-export default class extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
+export default class TabPage extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
     render() {
         return <Tab {...this.props} />;
     }
