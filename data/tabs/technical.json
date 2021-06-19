@@ -4,6 +4,7 @@
     ["local.guys.wtf", "DNS with an <code>A</code> record pointing to <code>127.0.0.1</code> and a <code>AAAA</code> record pointing to <code>::1</code>. Any subomdain is <code>CNAME</code>ed and works as well. "],
     ["local4.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv4 (<code>A</code> record) only. "],
     ["local6.guys.wtf", "Same as <code>local.guys.wtf</code>, but IPv6 (<code>AAAA</code> record) only. "],
+    ["lookup.everyone.wtf", "DNS over HTTPS Lookup"],
     ["lzw.everyone.wtf", "Compress Strings via LZW"],
     ["qr.everyone.wtf", "Generate QR Codes"],
     ["secure.everyone.wtf", "Generate Passwords"],
