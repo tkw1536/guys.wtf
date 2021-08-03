@@ -29,7 +29,8 @@ export default class Tab extends React.Component<{tab: string, tabs: PageTab[], 
                 {pages.map(({ domain, title }) => <WTFLink key={domain} url={domain}>{title}</WTFLink>)}
             </ul>
             <p>
-                This page is powered by <a href="https://nextjs.org/">NEXT.js</a> and <a href="https://github.com/davidrzs/latexcss">latex.css</a>.
+                This page is powered by <a href="https://nextjs.org/" rel="noopener noreferrer">NEXT.js</a> and <a href="https://github.com/davidrzs/latexcss" rel="noopener noreferrer">latex.css</a>.
+                <a className={style.cat} href="https://cat.guys.wtf" target="_blank" rel="noopener noreferrer">🐈 (turn on sound)</a>
             </p>
         </>;
     }
@@ -51,7 +52,7 @@ class WTFLink extends React.Component<{ url: string, children: string }> {
     render() {
         const { url, children } = this.props;
         return <li>
-            <a href={`https://${url}`}>{url}</a><span dangerouslySetInnerHTML={children ? { __html: ` - ${children}` } : undefined} />
+            <a href={`https://${url}`} rel="noopener noreferrer">{url}</a><span dangerouslySetInnerHTML={children ? { __html: ` - ${children}` } : undefined} />
         </li>;
     }
 }
