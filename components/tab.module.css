@@ -13,23 +13,14 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 
-    border: 1px solid #eeeeee;
     border-bottom: 0;
-
-}
-
-.tabList > a, .tabList > a:visited {
-    color: black;
 }
 
 .tabList >  a.active {
-    background: #eeeeee;
     font-weight: bold;
 }
 
 .pageContainer {
-    border: 1px solid #eeeeee;
-    background: #eeeeee;
     border-radius: 10px;
     margin-top: 0px;
     padding-top: 10px;
@@ -41,10 +32,29 @@
     padding-right: 5px;
 }
 
-a.cat {
-    opacity: 0;
+.tabList > a, .pageContainer {
+    border: 1px solid #eeeeee;
 }
 
-a.cat:hover, a.cat:active {
-    opacity: 1;
+.tablList > a.active, .pageContainer {
+    background: #eeeeee;
+}
+
+.tabList > a, .tabList > a:visited {
+    color: black;
+}
+
+@media(prefers-color-scheme: dark) {
+
+    .tabList > a, .pageContainer {
+        border: 1px solid #555;
+    }
+    
+    .tabList > a.active, .pageContainer {
+        background: #555;
+    }
+    
+    .tabList > a, .tabList > a:visited {
+        color: white;
+    }
 }
