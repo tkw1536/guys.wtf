@@ -28,10 +28,6 @@ export default class Tab extends React.Component<{tab: string, tabs: PageTab[], 
             <ul className={style.pageContainer}>
                 {pages.map(({ domain, title }) => <WTFLink key={domain} url={domain}>{title}</WTFLink>)}
             </ul>
-            <p>
-                This page is powered by <a href="https://nextjs.org/" rel="noopener noreferrer">NEXT.js</a> and <a href="https://github.com/davidrzs/latexcss" rel="noopener noreferrer">latex.css</a>.
-                <a className={style.cat} href="https://cat.guys.wtf" target="_blank" rel="noopener noreferrer">🐈 (turn on sound)</a>
-            </p>
         </>;
     }
 }

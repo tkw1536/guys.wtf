@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark) {
+    html, body {
+        color: white;
+        background: rgb(18, 18, 18);
+    }
+
+    a, a:visited {
+        color: #b00;
+    }
+}
+
+a.cat {
+    opacity: 0;
+}
+
+a.cat:hover, a.cat:active {
+    opacity: 1;
+}
