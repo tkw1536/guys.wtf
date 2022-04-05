@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 import { GetStaticProps } from "next";
 import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../data";
 import TabPage from "./tabs/[tab]";

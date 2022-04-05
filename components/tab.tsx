@@ -1,9 +1,9 @@
-import * as React from 'react';
+import * as React from "react";
 import { PageTab, LinkedPage } from "../data";
-import Head from 'next/head';
-import Link from 'next/link';
+import Head from "next/head";
+import Link from "next/link";
 
-import style from './tab.module.css';
+import style from "./tab.module.css";
 
 
 export default function Tab({ tab, tabs, pages }: { tab: string, tabs: PageTab[], pages: LinkedPage[] }) {
@@ -32,7 +32,7 @@ export default function Tab({ tab, tabs, pages }: { tab: string, tabs: PageTab[]
 
 function TabLink({ active, tab: { title, name }, last }: { tab: PageTab, active: boolean, last: boolean }) {
     return <Link href={`/tabs/${name}`}>
-        <a role="tab" className={active ? style.active : ''}>{title}</a>
+        <a role="tab" className={active ? style.active : ""}>{title}</a>
     </Link>;
 }
 
