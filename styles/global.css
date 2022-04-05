@@ -9,10 +9,10 @@
     }
 }
 
-a.cat {
+.cat {
     opacity: 0;
 }
 
-a.cat:hover, a.cat:active {
+.cat:hover, a.cat:active {
     opacity: 1;
 }
