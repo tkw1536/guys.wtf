@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { GetStaticProps, GetStaticPaths } from 'next';
+import * as React from "react";
+import { GetStaticProps, GetStaticPaths } from "next";
 import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../../data";
 
-import Tab from '../../components/tab';
+import Tab from "../../components/tab";
 
 export default function TabPage(props: {tab: string, tabs: PageTab[], pages: LinkedPage[]}) {
     return <Tab {...props} />;
