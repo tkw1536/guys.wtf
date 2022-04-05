@@ -4,11 +4,8 @@ import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../../data";
 
 import Tab from '../../components/tab';
 
-
-export default class TabPage extends React.Component<{tab: string, tabs: PageTab[], pages: LinkedPage[]}> {
-    render() {
-        return <Tab {...this.props} />;
-    }
+export default function TabPage(props: {tab: string, tabs: PageTab[], pages: LinkedPage[]}) {
+    return <Tab {...props} />;
 }
 
 export const getStaticProps: GetStaticProps = async ({params: {tab}}) => {
