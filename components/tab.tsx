@@ -22,10 +22,10 @@ export default class Tab extends React.Component<{tab: string, tabs: PageTab[], 
                 Most of these are pointless, but still work.
                 If you have an idea for a new one or a suggestion for improvement, email me at <a href="mailto:jesus@guys.wtf">jesus@guys.wtf</a>.
             </p>
-            <p className={style.tabList}>
+            <p className={style.tabList} role="tablist">
                 {tabs.map((t, idx) => <TabLink key={t.name} tab={t} active={t.name === tab} last={idx === lastTabIndex} />)}
             </p>
-            <ul className={style.pageContainer}>
+            <ul className={style.pageContainer} role="tabpanel">
                 {pages.map(({ domain, title }) => <WTFLink key={domain} url={domain}>{title}</WTFLink>)}
             </ul>
         </>;
@@ -38,7 +38,7 @@ class TabLink extends React.Component<{ tab: PageTab, active: boolean, last: boo
         const { active, tab: { title, name }, last } = this.props;
         return <>
             <Link href={`/tabs/${name}`}>
-                <a className={ active ? style.active : ''}>{title}</a>
+                <a role="tab" className={ active ? style.active : ''}>{title}</a>
             </Link>
         </>;
     }
