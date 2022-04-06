@@ -8,5 +8,6 @@
     ["lzw.everyone.wtf", "Compress Strings via LZW"],
     ["qr.everyone.wtf", "Generate QR Codes"],
     ["secure.everyone.wtf", "Generate Passwords"],
+    ["play.guys.wtf", "Test all your gamepads"],
     ["live.guys.wtf", "Live Demo"]
 ]
