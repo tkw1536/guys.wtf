@@ -1,5 +1,6 @@
 [
     ["k.hw.is", "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>"],
+    ["base64.everyone.wtf", "Convert Files to Base64"],
     ["trap.everyone.wtf", "<a href='https://github.com/tkw1536/http-tarpit'>HTTP Tarpit</a>"],
     ["jsdelivr-is-offered-by-prospectone-based-in-krakow.guys.wtf", "It's in the EU people"],
     ["local.guys.wtf", "DNS with an <code>A</code> record pointing to <code>127.0.0.1</code> and a <code>AAAA</code> record pointing to <code>::1</code>. Any subdomain is <code>CNAME</code>ed and works as well. "],
