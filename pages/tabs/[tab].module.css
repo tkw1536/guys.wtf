@@ -32,6 +32,20 @@
     padding-right: 5px;
 }
 
+span.tagline:not(:empty)::before {
+    content: " - ";
+}
+
+.pageContainer > li > span.info {
+    margin-left: 5px;
+    font-size: small;
+    opacity: 0.4;
+}
+
+.pageContainer > li:hover > span.info {
+    opacity: 1;
+}
+
 .tabList > a, .pageContainer {
     border: 1px solid #eeeeee;
 }

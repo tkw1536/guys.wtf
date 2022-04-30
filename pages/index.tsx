@@ -1,28 +1,25 @@
 import * as React from "react";
 import { GetStaticProps } from "next";
-import fetchTabs, {fetchPages, PageTab, LinkedPage} from "../data";
-import TabPage from "./tabs/[tab]";
+import TabPage, { TabProps } from "./tabs/[tab]";
 import Head from "next/head";
+import { getMetas, getTagTab } from "../projects";
 
-export default function Page(props: {tab: string, tabs: PageTab[], pages: LinkedPage[]}) {
-    const { tab } = props;
+export default function Page(props: TabProps) {
     return <>
         <Head>
-            <meta httpEquiv="refresh" content={`0; url=/tabs/${tab}`} />
+            <meta httpEquiv="refresh" content={`0; url=/tabs/${props.tagtab.id}`} />
         </Head>
         <TabPage {...props} />
     </>;
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const tab = "index";
-    const tabs = await fetchTabs();
-    const pages = await fetchPages(tab as string);
+    const metas = getMetas();
+    const tagtab = await getTagTab("index")
     return {
         props: {
-            tab,
-            tabs,
-            pages
+            metas,
+            tagtab,
         }
     }
 }
