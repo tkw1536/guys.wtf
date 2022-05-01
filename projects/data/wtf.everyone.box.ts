@@ -1,9 +1,18 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "box.everyone.wtf",
+    _version: 1,
+
+    "name": "DotsAndBoxes",
     "description": "Dots and Boxes from 2013",
     "git": "https://github.com/tkw1536/box.everyone.wtf",
+    "implementation": {
+        language: "html",
+        framework: "none",
+        features: {
+            darkmode: false,
+        }
+    },
     "deployment": {
         "domain": "box.everyone.wtf",
         "kind": "static",
@@ -11,7 +20,8 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 13,
+        "order": 1,
+        "title": "box.everyone.wtf",
         "tagline": "Dots and Boxes from 2013"
     }
 }

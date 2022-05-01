@@ -1,13 +1,22 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+    
     "name": "istombothered.com",
-    "description": "made without my consent",
-    "git": "https://github.com/tkw1536/istombothered.com",
+    "description": "A website showing all my tweets",
+    "author": "kuboschek",
+    "implementation": {
+        "language": "html",
+        "framework": "none",
+        "features": {
+            "darkmode": false,
+        },
+    },
     "deployment": {
         "domain": "istombothered.com",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
     },
     "display": {
         "tag": "index",

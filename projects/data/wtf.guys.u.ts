@@ -1,9 +1,20 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "u.guys.wtf",
-    "description": "Unicode",
+    "description": "Encode strings with unicode modifiers",
     "git": "https://github.com/tkw1536/u.guys.wtf",
+    "implementation": {
+        "language": "typescript",
+        "framework": "nextjs",
+        features: {
+            usingShared: false,
+            darkmode: false,
+            env: false,
+        },
+    },
     "deployment": {
         "domain": "u.guys.wtf",
         "kind": "static",
@@ -11,7 +22,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 8,
+        "order": 0,
         "tagline": "Unicode"
     }
 }

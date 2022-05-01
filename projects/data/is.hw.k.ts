@@ -1,9 +1,17 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "k.hw.is",
-    "description": "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>",
-    "git": "https://github.com/tkw1536/k.hw.is",
+    _version: 1,
+
+    "name": "akhttpd",
+    "description": "A daemon to serve ssh keys of every GitHub user",
+    "git": "https://github.com/tkw1536/akhttpd",
+    "implementation": {
+        "language": "go",
+        "features": {
+            tests: true,
+        },
+    },
     "deployment": {
         "domain": "k.hw.is",
         "kind": "static",
@@ -11,7 +19,7 @@ const project: Project = {
     },
     "display": {
         "tag": "technical",
-        "order": 0,
+        "title": "k.hw.is",
         "tagline": "<a href='https://github.com/tkw1536/akhttpd'>akhttpd</a>"
     }
 }

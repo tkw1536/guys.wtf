@@ -1,9 +1,17 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
     "name": "jesus.guys.wtf",
-    "description": "Jesus",
+    "description": "A website making use of the pun in the domain name",
     "git": "https://github.com/tkw1536/jesus.guys.wtf",
+    "implementation": {
+        "language": "html",
+        "framework": "none",
+        "features": {
+            darkmode: false,
+        }
+    },
     "deployment": {
         "domain": "jesus.guys.wtf",
         "kind": "static",
@@ -11,7 +19,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 5,
+        "order": 0,
         "tagline": "Jesus"
     }
 }

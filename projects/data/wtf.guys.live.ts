@@ -1,17 +1,24 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "live.guys.wtf",
-    "description": "Live Demo",
-    "git": "https://github.com/tkw1536/live.guys.wtf",
+    _version: 1,
+    "name": "proxyssh",
+    "description": "Easily run multiple commands via an ssh proxy",
+    "git": "https://github.com/tkw1536/proxyssh",
+    "implementation": {
+        "language": "go",
+        "features": {
+            tests: true,
+        },
+    },
     "deployment": {
         "domain": "live.guys.wtf",
-        "kind": "static",
-        "provider": "ghpages"
+        "kind": "docker",
+        "provider": "hetzner",
     },
     "display": {
         "tag": "technical",
-        "order": 12,
+        "title": "live.guys.wtf",
         "tagline": "Live Demo"
     }
 }

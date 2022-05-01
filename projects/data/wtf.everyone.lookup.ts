@@ -1,9 +1,20 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "lookup.everyone.wtf",
-    "description": "DNS over HTTPS Lookup",
+    "description": "A DNS over HTTPS lookup website",
     "git": "https://github.com/tkw1536/lookup.everyone.wtf",
+    "implementation": {
+        language: "typescript",
+        framework: "nextjs",
+        features: {
+            usingShared: false,
+            env: false,
+            darkmode: false,
+        }
+    },
     "deployment": {
         "domain": "lookup.everyone.wtf",
         "kind": "static",
@@ -11,7 +22,6 @@ const project: Project = {
     },
     "display": {
         "tag": "technical",
-        "order": 7,
         "tagline": "DNS over HTTPS Lookup"
     }
 }

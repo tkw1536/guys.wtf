@@ -1,9 +1,18 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "viktorijapays4everythin.ga",
     "description": "Viktorija pays for everything",
     "git": "https://github.com/tkw1536/viktorijapays4everythin.ga",
+    "implementation": {
+        "language": "html",
+        "framework": "none",
+        "features": {
+            darkmode: false,
+        },
+    },
     "deployment": {
         "domain": "viktorijapays4everythin.ga",
         "kind": "static",

@@ -1,17 +1,25 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "coffee.guys.wtf",
-    "description": "☕",
+    "description": "A website returning HTTP 318 I'm a teapot",
     "git": "https://github.com/tkw1536/coffee.guys.wtf",
+    "implementation": {
+        "language": "go",
+        "features": {
+            tests: false,
+        }
+    },
     "deployment": {
         "domain": "coffee.guys.wtf",
-        "kind": "static",
-        "provider": "ghpages"
+        "kind": "docker",
+        "provider": "hetzner"
     },
     "display": {
         "tag": "index",
-        "order": 2,
+        "order": 0,
         "tagline": "☕"
     }
 }

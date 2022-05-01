@@ -1,17 +1,23 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
     "name": "getrecd.guys.wtf",
-    "description": "Hackathon Project",
-    "git": "https://github.com/tkw1536/getrecd.guys.wtf",
+    "description": "Hackathon Project to make Spotify Playlist based on a specific sentence",
+    "git": "https://github.com/sourabhlal/getRECd",
+    "implementation": {
+        "language": "python",
+        "framework": "bottle",
+        "features": {},
+    },
     "deployment": {
         "domain": "getrecd.guys.wtf",
-        "kind": "static",
-        "provider": "ghpages"
+        "kind": "docker",
+        "provider": "hetzner"
     },
     "display": {
         "tag": "index",
-        "order": 4,
+        "order": 0,
         "tagline": "Hackathon Project"
     }
 }

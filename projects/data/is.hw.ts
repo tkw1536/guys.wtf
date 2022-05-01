@@ -3,24 +3,23 @@ import { Project } from "../types"
 const project: Project = {
     _version: 1,
 
-    "name": "t.hw.is",
-    "description": "A game where you accumulate points by clicking",
-    "git": "https://github.com/tkw1536/stupidwaitinggame",
+    "name": "tus",
+    "description": "A Django-based URL shortener",
+    "git": "https://github.com/tkw1536/tus",
     "implementation": {
         "language": "python",
         "framework": "django",
         "features": {},
     },
     "deployment": {
-        "domain": "t.hw.is",
+        "domain": "hw.is",
         "kind": "docker",
         "provider": "hetzner"
     },
     "display": {
-        "tag": "index",
-        "order": 21,
-        "title": "t.hw.is",
-        "tagline": "Great Treasure Awaits"
+        "tag": "technical",
+        "title": "hw.is",
+        "tagline": "URL Shortener"
     }
 }
 
