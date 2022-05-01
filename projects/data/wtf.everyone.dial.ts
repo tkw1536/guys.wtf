@@ -1,9 +1,18 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "dial.everyone.wtf",
-    "description": "#DialYourTweet",
-    "git": "https://github.com/tkw1536/dial.everyone.wtf",
+    _version: 1,
+
+    "name": "DialYourTweet",
+    "description": "A hackathon project that allows you to tweet using a rotary phone",
+    "git": "https://github.com/tkw1536/DialYourTweet",
+    "implementation": {
+        language: "html",
+        framework: "none",
+        features: {
+            darkmode: false,
+        },
+    },
     "deployment": {
         "domain": "dial.everyone.wtf",
         "kind": "static",
@@ -11,7 +20,8 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 16,
+        "title": "dial.everyone.wtf",
+        "order": 1,
         "tagline": "#DialYourTweet"
     }
 }

@@ -1,17 +1,27 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "video.guys.wtf",
-    "description": "Screen Capture",
+    "description": "Experiments with the Screen Capture API",
     "git": "https://github.com/tkw1536/video.guys.wtf",
+    "implementation": {
+        language: "html",
+        framework: "none",
+        features: {
+            darkmode: false,
+        }
+    },
     "deployment": {
         "domain": "video.guys.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        tracking: true,
     },
     "display": {
         "tag": "index",
-        "order": 10,
+        "order": 0,
         "tagline": "Screen Capture"
     }
 }

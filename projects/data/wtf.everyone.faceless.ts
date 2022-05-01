@@ -1,9 +1,16 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "faceless.everyone.wtf",
-    "description": "In Memory Of The Faceless",
+    "description": "A website listing all the faceless people in the yearbook",
     "git": "https://github.com/tkw1536/faceless.everyone.wtf",
+    "implementation": {
+        language: "html",
+        framework: "jekyll",
+        features: {},
+    },
     "deployment": {
         "domain": "faceless.everyone.wtf",
         "kind": "static",
@@ -11,7 +18,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 17,
+        "order": 1,
         "tagline": "In Memory Of The Faceless"
     }
 }

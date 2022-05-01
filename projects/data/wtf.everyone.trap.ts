@@ -1,17 +1,25 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "trap.everyone.wtf",
-    "description": "<a href='https://github.com/tkw1536/http-tarpit'>HTTP Tarpit</a>",
-    "git": "https://github.com/tkw1536/trap.everyone.wtf",
+    _version: 1,
+    "name": "http-tarpit",
+    "description": "A http tarpit, that is a server that traps clients forever",
+    "git": "https://github.com/tkw1536/http-tarpit",
+    "implementation": {
+        "language": "go",
+        "upstream": "https://github.com/die-net/http-tarpit",
+        "features": {
+            tests: false,
+        }
+    },
     "deployment": {
         "domain": "trap.everyone.wtf",
-        "kind": "static",
-        "provider": "ghpages"
+        "kind": "docker",
+        "provider": "hetzner"
     },
     "display": {
         "tag": "technical",
-        "order": 2,
+        "title": "trap.everyone.wtf",
         "tagline": "<a href='https://github.com/tkw1536/http-tarpit'>HTTP Tarpit</a>"
     }
 }

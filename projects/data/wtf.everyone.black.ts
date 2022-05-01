@@ -1,9 +1,18 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "black.everyone.wtf",
     "description": "Black Screen",
     "git": "https://github.com/tkw1536/black.everyone.wtf",
+    "implementation": {
+        language: "html",
+        framework: "none",
+        features: {
+            darkmode: false,
+        }
+    },
     "deployment": {
         "domain": "black.everyone.wtf",
         "kind": "static",
@@ -11,7 +20,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 12,
+        "order": 1,
         "tagline": "Black Screen"
     }
 }

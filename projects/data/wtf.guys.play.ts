@@ -1,9 +1,20 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
+
     "name": "play.guys.wtf",
-    "description": "Test all your gamepads",
+    "description": "A website to display information about all your gamepads",
     "git": "https://github.com/tkw1536/play.guys.wtf",
+    "implementation": {
+        "language": "typescript",
+        "framework": "nextjs",
+        features: {
+            usingShared: false,
+            darkmode: false,
+            env: false,
+        },
+    },
     "deployment": {
         "domain": "play.guys.wtf",
         "kind": "static",
@@ -11,7 +22,6 @@ const project: Project = {
     },
     "display": {
         "tag": "technical",
-        "order": 11,
         "tagline": "Test all your gamepads"
     }
 }

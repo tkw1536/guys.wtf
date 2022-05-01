@@ -1,9 +1,19 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
     "name": "pancakes.guys.wtf",
-    "description": "reviewed as \"So thickk\"",
+    "description": "A website displaying a pancake recipe",
     "git": "https://github.com/tkw1536/pancakes.guys.wtf",
+    "implementation": {
+        "language": "typescript",
+        "framework": "nextjs",
+        "features": {
+            "darkmode": true,
+            "usingShared": false,
+            "env": false,
+        }
+    },
     "deployment": {
         "domain": "pancakes.guys.wtf",
         "kind": "static",
@@ -11,7 +21,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 6,
+        "order": 0,
         "tagline": "reviewed as \"So thickk\""
     }
 }

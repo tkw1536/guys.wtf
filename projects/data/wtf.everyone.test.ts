@@ -1,9 +1,17 @@
 import { Project } from "../types"
 
 const project: Project = {
+    _version: 1,
     "name": "test.everyone.wtf",
-    "description": "#tooManyTests",
+    "description": "A simple static website showing some test",
     "git": "https://github.com/tkw1536/test.everyone.wtf",
+    "implementation": {
+        "language": "html",
+        "framework": "none",
+        "features": {
+            "darkmode": false,
+        }
+    },
     "deployment": {
         "domain": "test.everyone.wtf",
         "kind": "static",
@@ -11,7 +19,7 @@ const project: Project = {
     },
     "display": {
         "tag": "index",
-        "order": 18,
+        "order": 1,
         "tagline": "#tooManyTests"
     }
 }

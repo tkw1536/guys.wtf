@@ -1,9 +1,17 @@
 import { Project } from "../types"
 
 const project: Project = {
-    "name": "stalk.everyone.wtf",
-    "description": "Jacobs University People Search",
-    "git": "https://github.com/tkw1536/stalk.everyone.wtf",
+    _version: 1,
+    "name": "People",
+    "description": "A frontend for a search engine for people at Jacobs University Bremen",
+    "git": "https://github.com/OpenJUB/People",
+    "implementation": {
+        "language": "html",
+        "framework": "none",
+        "features": {
+            "darkmode": false,
+        }
+    },
     "deployment": {
         "domain": "stalk.everyone.wtf",
         "kind": "static",
@@ -11,6 +19,7 @@ const project: Project = {
     },
     "display": {
         "tag": "legacy",
+        "title": "stalk.everyone.wtf",
         "order": 1,
         "tagline": "Jacobs University People Search"
     }

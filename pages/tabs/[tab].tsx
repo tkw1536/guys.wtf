@@ -43,10 +43,10 @@ function TabLink<Name extends string>({ active, meta: { id: name, title: descrip
 
 function ProjectLink<Name extends string>({ project }: {project: DisplayedProject<Name>}) {
     const { name } = project;
-    const { tagline, link } = project.display
+    const { tagline, link, title } = project.display
     const url = link ?? project.deployment?.domain;
     return <li>
-        <a href={`https://${url}`} rel="noopener noreferrer">{name}</a>
+        <a href={`https://${url}`} rel="noopener noreferrer">{title ?? name}</a>
         <span className={styles.tagline} dangerouslySetInnerHTML={tagline ? { __html: tagline } : undefined} />
 
 
