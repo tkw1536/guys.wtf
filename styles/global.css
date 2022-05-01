@@ -1,12 +1,28 @@
-@media (prefers-color-scheme: dark) {
-    html, body {
-        color: white;
-        background: rgb(18, 18, 18);
-    }
+:root {
+    color-scheme: light;
 
-    a, a:visited {
-        color: #c2ee00;
+    --foreground: #000;
+    --background: #fff;
+    --focus: blue;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --focus: #c2ee00;
+        --foreground: #fff;
+        --background: rgb(18, 18, 18)
     }
+}
+
+html, body {
+    color: var(--foreground);
+    background: var(--background);
+}
+
+
+a, a:visited {
+    color: var(--focus);
 }
 
 .cat {

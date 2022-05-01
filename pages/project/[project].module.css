@@ -1,0 +1,15 @@
+.propsTable {
+    width: 100%;
+}
+
+.propsTable > tr > td:first-child::after {
+    content: ":"
+}
+
+.propsTable code {
+    font-size: 11pt;
+}
+
+tr.boundary td {
+    padding-top: 20px;
+}

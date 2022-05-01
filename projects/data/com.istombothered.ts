@@ -4,8 +4,11 @@ const project: Project = {
     _version: 1,
     
     "name": "istombothered.com",
-    "description": "A website showing all my tweets",
-    "author": "kuboschek",
+    "description": "A website showing all of Tom's complainaing tweets. Made without my consent. ",
+    "author": {
+        "name": "Leo Kuboschek",
+        "link": "https://kuboschek.me/",
+    },
     "implementation": {
         "language": "html",
         "framework": "none",
