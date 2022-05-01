@@ -1,6 +1,3 @@
-.propsTable {
-    width: 100%;
-}
 
 .propsTable > tr > td:first-child::after {
     content: ":"

@@ -8,7 +8,6 @@ const project: Project = {
     "git": "https://github.com/kuboschek/isnickitalian.today",
     "implementation": {
         language: "html",
-        framework: "none",
         features: {
             darkmode: false,
         }

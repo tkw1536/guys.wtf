@@ -7,7 +7,6 @@ const project: Project = {
     "git": "https://github.com/OpenJUB/People",
     "implementation": {
         "language": "html",
-        "framework": "none",
         "features": {
             "darkmode": false,
         }

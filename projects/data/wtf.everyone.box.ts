@@ -5,10 +5,9 @@ const project: Project = {
 
     "name": "DotsAndBoxes",
     "description": "Dots and Boxes from 2013",
-    "git": "https://github.com/tkw1536/box.everyone.wtf",
+    "git": "https://github.com/tkw1536/DotsAndBoxes",
     "implementation": {
         language: "html",
-        framework: "none",
         features: {
             darkmode: false,
         }

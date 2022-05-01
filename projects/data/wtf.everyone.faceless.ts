@@ -4,7 +4,7 @@ const project: Project = {
     _version: 1,
 
     "name": "faceless.everyone.wtf",
-    "description": "A website listing all the faceless people in the yearbook",
+    "description": " listing all the faceless people in the yearbook",
     "git": "https://github.com/tkw1536/faceless.everyone.wtf",
     "implementation": {
         language: "html",

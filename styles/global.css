@@ -3,7 +3,7 @@
 
     --foreground: #000;
     --background: #fff;
-    --focus: blue;
+    --focus: #a00;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -31,4 +31,10 @@ a, a:visited {
 
 .cat:hover, a.cat:active {
     opacity: 1;
+}
+
+table {
+    width: calc(100vw - 20px);
+    margin-left: calc(-50vw + 50% + 10px);
+    text-align: left;
 }

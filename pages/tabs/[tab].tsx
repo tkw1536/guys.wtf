@@ -50,7 +50,7 @@ function ProjectLink<Name extends string>({ project }: {project: DisplayedProjec
         <span className={styles.tagline} dangerouslySetInnerHTML={tagline ? { __html: tagline } : undefined} />
 
         <span className={styles.info}>
-            <Link href={`/project/${project.id}`}>
+            <Link href={`/projects/${project.id}`}>
                 <a>More Details</a>
             </Link>
         </span>
