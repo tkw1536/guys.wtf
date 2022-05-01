@@ -11,7 +11,6 @@ const project: Project = {
     },
     "implementation": {
         "language": "html",
-        "framework": "none",
         "features": {
             "darkmode": false,
         },

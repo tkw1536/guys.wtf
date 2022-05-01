@@ -1,5 +1,5 @@
 import type { Project, TagTabMeta, TagTab, DisplayedProject, ProjectWithID } from "./types";
-import { ProjectDisplayKey } from "./types";
+import { ProjectDisplayKey } from "./meta";
 export type { Project } from "./types";
 
 import { default as projectIDs } from "./manifest/projects.json";
@@ -21,7 +21,7 @@ export async function getProject(id: string): Promise<ProjectWithID> {
 }
 
 /** a promise that imports all projects */
-async function allProjects(): Promise<Array<ProjectWithID>> {
+export async function getAllProjects(): Promise<Array<ProjectWithID>> {
     return Promise.all(
         projectIDs.map(getProject)
     )
@@ -41,7 +41,7 @@ export async function getTagTab<Name extends string>(name: Name): Promise<TagTab
     const meta = getMetas().find(({ id: mName }) => name === mName) as TagTabMeta<Name> | undefined;
     if (!meta) throw new Error(`Tag ${name} not found`)
 
-    const projects = (await allProjects())
+    const projects = (await getAllProjects())
         .filter(project => project.display?.tag === name) as Array<DisplayedProject<Name>>
 
     return {

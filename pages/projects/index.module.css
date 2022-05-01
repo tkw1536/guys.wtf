@@ -1,0 +1,21 @@
+.deployment::before {
+    font-size: small;
+    content: "D/"
+}
+
+.feature::before {
+    font-size: small;
+    content: "F/"
+}
+
+a.github {
+    text-decoration: none;
+}
+.github::before{
+    /* TODO: add a github icon here */
+    content: "gh:";
+    text-decoration: none;
+}
+a.github span {
+    text-decoration: underline;
+}

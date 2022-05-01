@@ -31,19 +31,6 @@ export type ProjectWithID = Project & {id: string}
 /** A project that is displayed */
 export type DisplayedProject<Name extends string> = ProjectWithID & {display: Display<Name>}
 
-/** turns a domain into a sortable key */
-function domainKey(domain: string | undefined): string | undefined {
-    if (!domain) return domain;
-    return domain.split(".").reverse().join(".")
-}
-
-/** ProjectDisplayKey returns a pair of (order, string) that should be used for sorting */
-export function ProjectDisplayKey(project: Project): [number, string] {
-    const order = project.display?.order ?? Number.MAX_SAFE_INTEGER;
-    const domain = domainKey(project.deployment?.domain) ?? domainKey(project.display?.title) ?? project.name;
-    return [order, domain];
-}
-
 /**
  * Implementation describes the implementation of the project
  */
@@ -60,7 +47,7 @@ type Implementation = (
 type ImplementationDeployment = {
     language: "none",
     framework: "deployment",
-    features?: never
+    features?: Record<never, never>,
 }
 
 type ImplementationGo = {
@@ -73,7 +60,7 @@ type ImplementationGo = {
 
 type ImplementationStaticHTML = {
     language: "html",
-    framework: "none",
+    framework?: never,
     features: {
         darkmode: boolean; // does the implementation allow dark mode
     },
@@ -82,7 +69,7 @@ type ImplementationStaticHTML = {
 type ImplementationJekyll = {
     language: "html",
     framework: "jekyll",
-    features?: never,
+    features?: Record<never, never>,
 }
 
 type ImplementationNext = {
@@ -98,13 +85,13 @@ type ImplementationNext = {
 type ImplementationBottle = {
     language: "python",
     framework: "bottle",
-    features?: never,
+    features?: Record<never, never>,
 }
 
 type ImplementationDjango = {
     language: "python",
     framework: "django",
-    features?: never,
+    features?: Record<never, never>,
 }
 
 

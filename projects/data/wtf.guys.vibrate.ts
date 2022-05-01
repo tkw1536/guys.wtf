@@ -8,7 +8,6 @@ const project: Project = {
     "git": "https://github.com/tkw1536/vibrate.guys.wtf",
     "implementation": {
         "language": "html",
-        "framework": "none",
         "features": {
             "darkmode": false,
         },

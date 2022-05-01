@@ -11,7 +11,7 @@ const project: Project = {
     "deployment": {
         "domain": "local.guys.wtf",
         "kind": "dns",
-        "provider": "ghpages"
+        "provider": "namecheap"
     },
     "display": {
         "tag": "technical",
