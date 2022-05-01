@@ -8,7 +8,10 @@ export type Project = {
     name: string; // name of the project
     description: string; // long form description of the project
     git?: string; // https:// url to github project
-    author?: string; // author (if not me directly)
+    author?: {
+        name: string;
+        link?: string;
+    }; // author (if not me directly)
 
     implementation: Implementation;
     releases?: Releases;
@@ -57,10 +60,12 @@ type Implementation = (
 type ImplementationDeployment = {
     language: "none",
     framework: "deployment",
+    features?: never
 }
 
 type ImplementationGo = {
     language: "go",
+    framework?: never,
     features: {
         tests: boolean;
     }
@@ -74,12 +79,10 @@ type ImplementationStaticHTML = {
     },
 }
 
-type _empty = Record<string, never>;
-
 type ImplementationJekyll = {
     language: "html",
     framework: "jekyll",
-    features: _empty,
+    features?: never,
 }
 
 type ImplementationNext = {
@@ -95,13 +98,13 @@ type ImplementationNext = {
 type ImplementationBottle = {
     language: "python",
     framework: "bottle",
-    features: _empty,
+    features?: never,
 }
 
 type ImplementationDjango = {
     language: "python",
     framework: "django",
-    features: _empty,
+    features?: never,
 }
 
 

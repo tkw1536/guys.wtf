@@ -49,15 +49,11 @@ function ProjectLink<Name extends string>({ project }: {project: DisplayedProjec
         <a href={`https://${url}`} rel="noopener noreferrer">{title ?? name}</a>
         <span className={styles.tagline} dangerouslySetInnerHTML={tagline ? { __html: tagline } : undefined} />
 
-
-    {/* Disabled for now
-
         <span className={styles.info}>
             <Link href={`/project/${project.id}`}>
                 <a>More Details</a>
             </Link>
         </span>
-    */}
     </li>;
 }
 
