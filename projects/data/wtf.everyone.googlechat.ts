@@ -13,7 +13,8 @@ const project: Project = {
     "deployment": {
         "domain": "googlechat.everyone.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": true,
     },
     "display": {
         "tag": "index",

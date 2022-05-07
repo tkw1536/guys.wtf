@@ -15,6 +15,7 @@ const project: Project = {
         "domain": "live.guys.wtf",
         "kind": "docker",
         "provider": "hetzner",
+        "tracking": false,
     },
     "display": {
         "tag": "technical",

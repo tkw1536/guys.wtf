@@ -19,6 +19,7 @@ const project: Project = {
         "domain": "istombothered.com",
         "kind": "static",
         "provider": "ghpages",
+        "tracking": false,
     },
     "display": {
         "tag": "index",

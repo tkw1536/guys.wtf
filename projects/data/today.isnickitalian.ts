@@ -15,7 +15,8 @@ const project: Project = {
     "deployment": {
         "domain": "isnickitalian.today",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        tracking: false,
     },
     "display": {
         "tag": "index",

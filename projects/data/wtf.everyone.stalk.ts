@@ -14,7 +14,8 @@ const project: Project = {
     "deployment": {
         "domain": "stalk.everyone.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": false,
     },
     "display": {
         "tag": "legacy",

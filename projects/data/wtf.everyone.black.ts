@@ -15,7 +15,8 @@ const project: Project = {
     "deployment": {
         "domain": "black.everyone.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": true,
     },
     "display": {
         "tag": "index",

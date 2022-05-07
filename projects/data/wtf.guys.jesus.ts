@@ -14,7 +14,8 @@ const project: Project = {
     "deployment": {
         "domain": "jesus.guys.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": true,
     },
     "display": {
         "tag": "index",

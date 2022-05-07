@@ -14,7 +14,8 @@ const project: Project = {
     "deployment": {
         "domain": "t.hw.is",
         "kind": "docker",
-        "provider": "hetzner"
+        "provider": "hetzner",
+        tracking: true,
     },
     "display": {
         "tag": "index",
