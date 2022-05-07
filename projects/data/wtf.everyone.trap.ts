@@ -15,7 +15,8 @@ const project: Project = {
     "deployment": {
         "domain": "trap.everyone.wtf",
         "kind": "docker",
-        "provider": "hetzner"
+        "provider": "hetzner",
+        "tracking": false,
     },
     "display": {
         "tag": "technical",

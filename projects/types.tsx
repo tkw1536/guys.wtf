@@ -21,8 +21,6 @@ export type Project = {
 }
 
 // TODO:
-// 1: implementation + description
-// 2: tracking
 // 3: releases (future work, allow multiple)
 
 /** a project with an id */

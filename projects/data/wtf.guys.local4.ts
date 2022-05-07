@@ -12,7 +12,8 @@ const project: Project = {
     "deployment": {
         "domain": "local4.guys.wtf",
         "kind": "dns",
-        "provider": "namecheap"
+        "provider": "namecheap",
+        "tracking": false,
     },
     "display": {
         "tag": "technical",

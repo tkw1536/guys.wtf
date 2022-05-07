@@ -15,7 +15,8 @@ const project: Project = {
     "deployment": {
         "domain": "viktorijapays4everythin.ga",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": true
     },
     "display": {
         "tag": "index",

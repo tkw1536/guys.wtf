@@ -18,7 +18,8 @@ const project: Project = {
     "deployment": {
         "domain": "blog.guys.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": false,
     },
     "display": {
         "tag": "legacy",

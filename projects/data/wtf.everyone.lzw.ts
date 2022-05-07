@@ -18,7 +18,8 @@ const project: Project = {
     "deployment": {
         "domain": "lzw.everyone.wtf",
         "kind": "static",
-        "provider": "ghpages"
+        "provider": "ghpages",
+        "tracking": true,
     },
     "display": {
         "tag": "technical",

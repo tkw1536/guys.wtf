@@ -13,7 +13,8 @@ const project: Project = {
     "deployment": {
         "domain": "getrecd.guys.wtf",
         "kind": "docker",
-        "provider": "hetzner"
+        "provider": "hetzner",
+        "tracking": false,
     },
     "display": {
         "tag": "index",

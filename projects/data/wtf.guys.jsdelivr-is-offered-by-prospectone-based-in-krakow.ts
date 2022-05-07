@@ -15,6 +15,7 @@ const project: Project = {
         "domain": "jsdelivr-is-offered-by-prospectone-based-in-krakow.guys.wtf",
         "kind": "docker",
         "provider": "hetzner",
+        "tracking": false,
     },
     "display": {
         "tag": "technical",

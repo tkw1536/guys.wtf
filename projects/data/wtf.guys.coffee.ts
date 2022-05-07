@@ -15,7 +15,8 @@ const project: Project = {
     "deployment": {
         "domain": "coffee.guys.wtf",
         "kind": "docker",
-        "provider": "hetzner"
+        "provider": "hetzner",
+        "tracking": true,
     },
     "display": {
         "tag": "index",

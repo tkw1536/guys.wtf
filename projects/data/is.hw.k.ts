@@ -14,8 +14,9 @@ const project: Project = {
     },
     "deployment": {
         "domain": "k.hw.is",
-        "kind": "static",
-        "provider": "ghpages"
+        "kind": "docker",
+        "provider": "hetzner",
+        tracking: true,
     },
     "display": {
         "tag": "technical",
