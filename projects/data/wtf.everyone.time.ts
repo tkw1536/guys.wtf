@@ -1,11 +1,11 @@
-import { Project } from "../types"
+import type { Project } from "../types"
 
 const project: Project = {
     _version: 1,
-    "name": "time.everyone.wtf",
-    "description": "A website comparing and showing multiple timezones",
-    "git": "https://github.com/tkw1536/time.everyone.wtf",
-    "implementation": {
+    name: "time.everyone.wtf",
+    description: "A website comparing and showing multiple timezones",
+    git: "https://github.com/tkw1536/time.everyone.wtf",
+    implementation: {
         language: "typescript",
         framework: "nextjs",
         features: {
@@ -14,17 +14,17 @@ const project: Project = {
             env: false,
         },
     },
-    "deployment": {
-        "domain": "time.everyone.wtf",
-        "kind": "static",
-        "provider": "ghpages",
-        "tracking": true,
+    deployment: {
+        domain: "time.everyone.wtf",
+        kind: "static",
+        provider: "ghpages",
+        tracking: true,
     },
-    "display": {
-        "tag": "index",
-        "order": 1,
-        "tagline": "Time"
-    }
+    display: {
+        tag: "index",
+        order: 1,
+        tagline: "Time",
+    },
 }
 
 export default project

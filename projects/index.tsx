@@ -1,13 +1,13 @@
-import type { Project, TagTabMeta, TagTab, DisplayedProject, ProjectWithID } from "./types";
-import { ProjectDisplayKey } from "./meta";
-export type { Project } from "./types";
+import type { Project, TagTabMeta, TagTab, DisplayedProject, ProjectWithID } from "./types"
+import { ProjectDisplayKey } from "./meta"
+export type { Project } from "./types"
 
-import { default as projectIDs } from "./manifest/projects.json";
-import { default as tabs } from "./manifest/tabs.json";
+import { default as projectIDs } from "./manifest/projects.json"
+import { default as tabs } from "./manifest/tabs.json"
 
 /** gets a list of all project names */
 export function getProjectIDs(): Array<string> {
-    return projectIDs.slice(0);
+    return projectIDs.slice(0)
 }
 
 /** gets a specific */
@@ -17,7 +17,7 @@ export async function getProject(id: string): Promise<ProjectWithID> {
     }
 
     const project = await import("./data/" + id).then(i => i.default as Project)
-    return {...project, id: id}
+    return { ...project, id: id }
 }
 
 /** a promise that imports all projects */
@@ -32,13 +32,13 @@ export async function getAllProjects(): Promise<Array<ProjectWithID>> {
 export function getMetas(): Array<TagTabMeta<string>> {
     return (tabs as Array<[string, string]>)
         .map(([title, id]) => ({
-            title, id
+            title, id,
         }))
 }
 
 /** Loads a single page form the list of known pages */
 export async function getTagTab<Name extends string>(name: Name): Promise<TagTab<Name>> {
-    const meta = getMetas().find(({ id: mName }) => name === mName) as TagTabMeta<Name> | undefined;
+    const meta = getMetas().find(({ id: mName }) => name === mName) as TagTabMeta<Name> | undefined
     if (!meta) throw new Error(`Tag ${name} not found`)
 
     const projects = (await getAllProjects())

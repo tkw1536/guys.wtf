@@ -1,17 +1,16 @@
-import { GetStaticProps } from "next"
+import type { GetStaticProps } from "next"
 import Head from "next/head"
 import Link from "next/link"
-import { platform } from "os"
 import * as React from "react"
 import { getAllProjects } from "../../projects"
 import { Frameworks, Languages, Features, Providers, Kinds } from "../../projects/meta"
-import { ProjectWithID } from "../../projects/types"
+import type { ProjectWithID } from "../../projects/types"
 import styles from "./index.module.css"
 
 const GITHUB = "https://github.com/"
 
 export default function Page(props: { projects: Array<ProjectWithID>}) {
-    const features = Object.entries(Features).map(([id, value]) => ({id, ...value})).sort((a, b) => a.name < b.name ? -1 : (a.name > b.name ? 1 : 0))
+    const features = Object.entries(Features).map(([id, value]) => ({ id, ...value })).sort((a, b) => a.name < b.name ? -1 : (a.name > b.name ? 1 : 0))
 
     return <>
         <Head>
@@ -103,17 +102,17 @@ export default function Page(props: { projects: Array<ProjectWithID>}) {
     </>
 }
 
-function GitURL({url} : {url: string | undefined }) {
-    if (!url) return null;
+function GitURL({ url } : {url: string | undefined }) {
+    if (!url) return null
     if(url.startsWith(GITHUB)) {
         return <a href={url} target="_blank" rel="noopener noreferrer" className={styles.github}><span>{url.substring(GITHUB.length)}</span></a>
     }
-    return <code>{url}</code>;
+    return <code>{url}</code>
 }
 
 
 function ProviderLink({ provider }: {provider?: string}) {
-    if (!provider) return null;
+    if (!provider) return null
 
     const prov = Providers[provider]
     return prov.href ? (
@@ -122,11 +121,11 @@ function ProviderLink({ provider }: {provider?: string}) {
         </a>
     ) : (
         prov.short
-    );
+    )
 }
 
 function KindLink({ kind }: {kind?: string}) {
-    if (!kind) return null;
+    if (!kind) return null
 
     const knd = Kinds[kind]
     return knd.href ? (
@@ -135,7 +134,7 @@ function KindLink({ kind }: {kind?: string}) {
         </a>
     ) : (
         knd.name
-    );
+    )
 }
 
 
@@ -144,6 +143,6 @@ export const getStaticProps: GetStaticProps = async () => {
     return {
         props: {
             projects,
-        }
+        },
     }
 }

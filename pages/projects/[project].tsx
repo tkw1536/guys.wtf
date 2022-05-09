@@ -1,10 +1,10 @@
-import * as React from "react";
-import { GetStaticProps, GetStaticPaths } from "next";
-import Head from "next/head";
-import { getProject, getProjectIDs } from "../../projects";
-import { ProjectWithID } from "../../projects/types";
+import * as React from "react"
+import type { GetStaticProps, GetStaticPaths } from "next"
+import Head from "next/head"
+import { getProject, getProjectIDs } from "../../projects"
+import type { ProjectWithID } from "../../projects/types"
 import styles from "./[project].module.css"
-import { Features, Frameworks, Kinds, Languages, Providers } from "../../projects/meta";
+import { Features, Frameworks, Kinds, Languages, Providers } from "../../projects/meta"
 
 interface ProjectProps {
     project: ProjectWithID,
@@ -27,7 +27,7 @@ export default function Page({ project }: ProjectProps) {
             </tr>
             <tr>
                 <td>Description</td>
-                <td dangerouslySetInnerHTML={{__html: description }} />
+                <td dangerouslySetInnerHTML={{ __html: description }} />
             </tr>
 
             { author && <tr>
@@ -66,7 +66,7 @@ export default function Page({ project }: ProjectProps) {
         </table>
 
         <hr />
-    </>;
+    </>
 }
 
 // TODO: This should all be generlized, not be rendered like this
@@ -78,7 +78,7 @@ function ImplBlock({ impl: { language, framework, features } }: { impl: ProjectW
     const feats = Object.entries((features ?? {}) as Record<string, boolean>).map(([name, value]) => ({
         first: false,
         value: value,
-        ...Features[name]
+        ...Features[name],
     }))
     
     // sort features by name
@@ -134,7 +134,7 @@ function ImplBlock({ impl: { language, framework, features } }: { impl: ProjectW
 
 function DeployBlock({ deployment: { domain, kind, tracking, provider } }: { deployment: Required<ProjectWithID>["deployment"] }) {
     const prov = Providers[provider] ?? (() => { throw new Error("Unknown provider " + provider)})()
-    const knd = Kinds[kind]  ?? (() => { throw new Error("Unknown kind " + kind)})()
+    const knd = Kinds[kind] ?? (() => { throw new Error("Unknown kind " + kind)})()
     return <>
         <tr className={styles.boundary}>
             <td>
@@ -173,15 +173,15 @@ function DeployBlock({ deployment: { domain, kind, tracking, provider } }: { dep
                 <code>{tracking ? "true" : "false" }</code>
             </td>
         </tr>
-    </>;
+    </>
 }
 
-export const getStaticProps: GetStaticProps = async ({params: {project: name}}) => {
+export const getStaticProps: GetStaticProps = async ({ params: { project: name } }) => {
     const project = await getProject(typeof name === "string" ? name : name[0])
     return {
         props: {
             project,
-        }
+        },
     }
 }
 
@@ -190,7 +190,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
     const ids = getProjectIDs()//.slice(0, 0); // disabled for now
 
     return {
-        paths: ids.map( id => ({params: {project: id}})),
+        paths: ids.map( id => ({ params: { project: id } })),
         fallback: false,
-    };
+    }
 }

@@ -1,6 +1,6 @@
-import * as React from "react";
-import "../styles/latex.css";
-import "../styles/global.css";
+import * as React from "react"
+import "../styles/latex.css"
+import "../styles/global.css"
 
 export default function MyApp({ Component, pageProps }) {
   return <>
@@ -40,7 +40,7 @@ class ClientSideScript extends React.Component<ScriptBasedContentProps> {
   render() {
     // See https://github.com/facebook/react/issues/10923#issuecomment-338715787
     // We are setting the content via dangerouslySetInnerHTML to prevent client-side overrides!
-    const __html = ClientSideScript.asHTML(this.props);
+    const __html = ClientSideScript.asHTML(this.props)
     return <span dangerouslySetInnerHTML={{ __html }}></span>
   }
 }
