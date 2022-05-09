@@ -1,7 +1,3 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "quotes": [1, "double", { "avoidEscape": true }],
-    "jsx-quotes": [1, "prefer-double"]
-  }
+  "extends": "./node_modules/tkw1536-lint-policy/index.js"
 }

@@ -1,10 +1,10 @@
-import * as React from "react";
-import { GetStaticProps, GetStaticPaths } from "next";
-import Head from "next/head";
-import { getMetas, getTagTab } from "../../projects";
-import { DisplayedProject, TagTab, TagTabMeta } from "../../projects/types";
-import styles from "./[tab].module.css";
-import Link from "next/link";
+import * as React from "react"
+import type { GetStaticProps, GetStaticPaths } from "next"
+import Head from "next/head"
+import { getMetas, getTagTab } from "../../projects"
+import type { DisplayedProject, TagTab, TagTabMeta } from "../../projects/types"
+import styles from "./[tab].module.css"
+import Link from "next/link"
 
 export interface TabProps {
     metas: Array<TagTabMeta<string>>
@@ -12,7 +12,7 @@ export interface TabProps {
 }
 
 export default function Tab({ metas, tagtab }: TabProps) {
-    const lastTabIndex = metas.length - 1;
+    const lastTabIndex = metas.length - 1
     return <>
         <Head>
             <title>guys.wtf</title>
@@ -31,20 +31,20 @@ export default function Tab({ metas, tagtab }: TabProps) {
         <ul className={styles.pageContainer} role="tabpanel">
             {tagtab.projects.map(p => <ProjectLink key={p.name} project={p} />)}
         </ul>
-    </>;
+    </>
 }
 
 
 function TabLink<Name extends string>({ active, meta: { id: name, title: description }, last }: { meta: TagTabMeta<Name>, active: boolean, last: boolean }) {
     return <Link href={`/tabs/${name}`}>
         <a role="tab" className={active ? styles.active : ""}>{description}</a>
-    </Link>;
+    </Link>
 }
 
 function ProjectLink<Name extends string>({ project }: {project: DisplayedProject<Name>}) {
-    const { name } = project;
+    const { name } = project
     const { tagline, link, title } = project.display
-    const url = link ?? project.deployment?.domain;
+    const url = link ?? project.deployment?.domain
     return <li>
         <a href={`https://${url}`} rel="noopener noreferrer">{title ?? name}</a>
         <span className={styles.tagline} dangerouslySetInnerHTML={tagline ? { __html: tagline } : undefined} />
@@ -54,27 +54,27 @@ function ProjectLink<Name extends string>({ project }: {project: DisplayedProjec
                 <a>More Details</a>
             </Link>
         </span>
-    </li>;
+    </li>
 }
 
 
-export const getStaticProps: GetStaticProps = async ({params: {tab}}) => {
-    const metas = getMetas();
-    const tagtab = await getTagTab(typeof tab === "string" ? tab : tab[0]);
+export const getStaticProps: GetStaticProps = async ({ params: { tab } }) => {
+    const metas = getMetas()
+    const tagtab = await getTagTab(typeof tab === "string" ? tab : tab[0])
     return {
         props: {
             metas,
             tagtab,
-        }
+        },
     }
 }
 
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    const metas = getMetas();
+    const metas = getMetas()
 
     return {
-        paths: metas.map(({ id }) => ({params: {tab: id}})),
+        paths: metas.map(({ id }) => ({ params: { tab: id } })),
         fallback: false,
-    };
+    }
 }
