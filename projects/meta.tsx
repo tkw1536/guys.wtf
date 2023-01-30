@@ -30,12 +30,12 @@ export const Frameworks: Record<ProjectWithID["implementation"]["framework"], { 
     nextjs: { name: "NextJS", href: "https://nextjs.org/" },
 }
 
-type keyofunion<T> = T extends T ? keyof T: never;
+type keyofunion<T> = T extends T ? keyof T : never;
 
-export const Features: Record<keyofunion<ProjectWithID["implementation"]["features"]>, { name: string, short: string; description: string}> = {
+export const Features: Record<keyofunion<ProjectWithID["implementation"]["features"]>, { name: string, short: string; description: string }> = {
     darkmode: { short: "d", name: "darkMode", description: "providing dark mode" },
     env: { short: "e", name: "env", description: "using env file" },
-    tests: { short:"t", name: "tests", description: "providing tests" },
+    tests: { short: "t", name: "tests", description: "providing tests" },
     usingShared: { short: "sc", name: "usingShared", description: "using common components" },
 }
 
@@ -43,10 +43,11 @@ export const Providers: Record<ProjectWithID["deployment"]["provider"], { name: 
     ghpages: { short: "ghpages", name: "GitHub Pages", href: "https://pages.github.com/" },
     hetzner: { short: "hetzner", name: "Hetzner", href: "https://hetzner.com/" },
     namecheap: { short: "namecheap", name: "Namecheap", href: "https://www.namecheap.com/" },
+    other: { short: "other", name: "Other", href: "" },
 }
 
 export const Kinds: Record<ProjectWithID["deployment"]["kind"], { name: string, href?: string }> = {
     dns: { name: "DNS" },
     docker: { name: "Docker", href: "https://www.docker.com/" },
-    static:  { name: "static" },
+    static: { name: "static" },
 }

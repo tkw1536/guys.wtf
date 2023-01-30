@@ -119,7 +119,7 @@ type Deployment = {
 }
 
 type DeploymentKind = "static" | "docker" | "dns";
-type DeploymentProvider = "ghpages" | "hetzner" | "namecheap";
+type DeploymentProvider = "ghpages" | "hetzner" | "namecheap" | "other";
 
 /** Display describes how an item is displayed on a page */
 type Display<Name extends string> = {
