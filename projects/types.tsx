@@ -38,6 +38,7 @@ type Implementation = (
     ImplementationNext |
     ImplementationGo | 
     ImplementationDjango | ImplementationBottle
+    | ImplementationJavaScript
 ) & {
     upstream?: string, // if set, this project is a fork of an upstream project
 }
@@ -45,6 +46,12 @@ type Implementation = (
 type ImplementationDeployment = {
     language: "none",
     framework: "deployment",
+    features?: Record<never, never>,
+}
+
+type ImplementationJavaScript = {
+    language: "javascript",
+    framework?: never,
     features?: Record<never, never>,
 }
 
