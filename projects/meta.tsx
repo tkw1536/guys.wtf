@@ -20,6 +20,7 @@ export const Languages: Record<ProjectWithID["implementation"]["language"], { na
     html: { name: "HTML" },
     python: { name: "Python" },
     typescript: { name: "Typescript", href: "https://www.typescriptlang.org/" },
+    javascript: { name: "Javascript" },
 }
 
 export const Frameworks: Record<ProjectWithID["implementation"]["framework"], { name?: string, href?: string }> = {
