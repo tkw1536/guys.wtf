@@ -19,7 +19,7 @@ export default function Tab({ metas, tagtab }: TabProps) {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         </Head>
-        <h1>guys.wtf &gt; x.com</h1>
+        <h1>guys.wtf</h1>
         <p>
             This page contains a list of projects on <code>guys.wtf</code> and related domains that I (or some of my friends) have made.
             Most of these are pointless, but I should list them anyways.
