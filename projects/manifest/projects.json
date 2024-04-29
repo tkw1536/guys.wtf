@@ -1,9 +1,8 @@
 [
-    "is.hw",
     "is.hw.k",
     "is.hw.t",
+    "is.hw",
     "today.isnickitalian",
-    "wtf.everyone",
     "wtf.everyone.base64",
     "wtf.everyone.black",
     "wtf.everyone.box",
@@ -22,7 +21,7 @@
     "wtf.everyone.test",
     "wtf.everyone.time",
     "wtf.everyone.trap",
-    "wtf.guys",
+    "wtf.everyone",
     "wtf.guys.blog",
     "wtf.guys.brexit",
     "wtf.guys.coffee",
@@ -34,9 +33,10 @@
     "wtf.guys.local",
     "wtf.guys.local4",
     "wtf.guys.local6",
-    "wtf.guys.my",
+    "wtf.guys.mexican.pay",
     "wtf.guys.my.4",
     "wtf.guys.my.6",
+    "wtf.guys.my",
     "wtf.guys.onatrain",
     "wtf.guys.pancakes",
     "wtf.guys.play",
@@ -44,5 +44,6 @@
     "wtf.guys.u",
     "wtf.guys.vibrate",
     "wtf.guys.video",
+    "wtf.guys",
     "wtf.not"
 ]
