@@ -21,7 +21,7 @@ const project: Project = {
     display: {
         tag: "index",
         order: 0,
-        tagline: "Will my DB train be late?",
+        tagline: "Will my train be late?",
     },
 }
 
