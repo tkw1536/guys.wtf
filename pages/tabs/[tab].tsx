@@ -23,7 +23,7 @@ export default function Tab({ metas, tagtab }: TabProps) {
         <p>
             This page contains a list of projects on <code>guys.wtf</code> and related domains that I (or some of my friends) have made.
             Most of these are pointless, but I should list them anyways.
-            If you have a comment, an idea for a new one or a suggestion for improvement, email me at <a href="mailto:jesus@guys.wtf">jesus@guys.wtf</a>.
+            If you have a comment, an idea for a new one or a suggestion for improvement, see how to reach me on <a href="https://tkw01536.de">my personal website</a>.
         </p>
         <p className={styles.tabList} role="tablist">
             {metas.map((m, idx) => <TabLink key={m.id} meta={m} active={m.id === tagtab.id} last={idx === lastTabIndex} />)}
@@ -36,9 +36,7 @@ export default function Tab({ metas, tagtab }: TabProps) {
 
 
 function TabLink<Name extends string>({ active, meta: { id: name, title: description }, last }: { meta: TagTabMeta<Name>, active: boolean, last: boolean }) {
-    return <Link href={`/tabs/${name}`}>
-        <a role="tab" className={active ? styles.active : ""}>{description}</a>
-    </Link>
+    return <Link href={`/tabs/${name}`} role="tab" className={active ? styles.active : ""}>{description}</Link>
 }
 
 function ProjectLink<Name extends string>({ project }: {project: DisplayedProject<Name>}) {
@@ -48,12 +46,6 @@ function ProjectLink<Name extends string>({ project }: {project: DisplayedProjec
     return <li>
         <a href={`https://${url}`} rel="noopener noreferrer">{title ?? name}</a>
         <span className={styles.tagline} dangerouslySetInnerHTML={tagline ? { __html: tagline } : undefined} />
-
-        <span className={styles.info}>
-            <Link href={`/projects/${project.id}`}>
-                <a>More Details</a>
-            </Link>
-        </span>
     </li>
 }
 

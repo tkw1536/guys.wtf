@@ -35,7 +35,7 @@ export type DisplayedProject<Name extends string> = ProjectWithID & {display: Di
 type Implementation = (
     ImplementationDeployment |
     ImplementationStaticHTML | ImplementationJekyll |
-    ImplementationNext |
+    ImplementationNext | ImplementationVite |
     ImplementationGo | 
     ImplementationDjango | ImplementationBottle
     | ImplementationJavaScript
@@ -85,6 +85,14 @@ type ImplementationNext = {
         darkmode: boolean; // does the implementation allow dark mode
         env: boolean; // does implementation use environment-based configuration
     },
+}
+
+type ImplementationVite = {
+    language: "typescript",
+    framework: "vite",
+    features: {
+        darkmode: boolean;
+    }, 
 }
 
 type ImplementationBottle = {
