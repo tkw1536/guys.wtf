@@ -9,8 +9,6 @@ export default function Page(props: TabProps) {
     return <>
         <Head>
             <meta httpEquiv="refresh" content={`0; url=/tabs/${props.tagtab.id}`} />
-            <link rel="me" href="https://github.com/tkw1536" />
-            <link rel="me" href="https://mastodon.social/@tkw01536" />
         </Head>
         <TabPage {...props} />
     </>

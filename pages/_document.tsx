@@ -4,7 +4,10 @@ import * as React from 'react'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+          <link rel="me" href="https://github.com/tkw1536" />
+          <link rel="me" href="https://mastodon.social/@tkw01536" />
+      </Head>
       <body className="latex-dark-auto">
         <main>
             <Main />
