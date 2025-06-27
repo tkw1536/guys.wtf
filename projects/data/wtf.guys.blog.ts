@@ -7,12 +7,9 @@ const project: Project = {
     description: "A blog started a long time ago that only ever got two posts",
     git: "https://github.com/tkw1536/blog.guys.wtf",
     implementation: {
-        language: "typescript",
-        framework: "nextjs",
+        language: "go",
         features: {
-            usingShared: false,
-            env: false,
-            darkmode: false,
+            tests: false,
         },
     },
     deployment: {
@@ -22,9 +19,9 @@ const project: Project = {
         tracking: false,
     },
     display: {
-        tag: "legacy",
+        tag: "index",
         order: 0,
-        tagline: "Defunct blog",
+        tagline: "Personal Blog - not updated in a while",
     },
 }
 
