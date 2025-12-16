@@ -12,6 +12,7 @@ out/
 
 # next.js
 /.next/
+.yarn
 /out/
 
 # production
